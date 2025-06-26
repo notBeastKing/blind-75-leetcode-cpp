@@ -13,7 +13,11 @@ vector<int> twoSum(vector<int>& nums, int target)
         {
             for(int j = 1; j < vec_len; j++)
             {
-                if(nums[i] + nums[j] == target)
+                if(nums[i] > target || nums[2] > target)
+                {
+                    continue;
+                }
+                else if(nums[i] + nums[j] == target)
                 {
                     vector<int> res = {i,j};
                     break;
@@ -26,7 +30,6 @@ vector<int> twoSum(vector<int>& nums, int target)
 
 int main(){
     vector<int> cases = {2, 7, 11, 15};
-
     vector<int> ans = twoSum(cases ,9);
 
     for(int &i : ans)
