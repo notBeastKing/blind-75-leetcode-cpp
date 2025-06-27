@@ -1,3 +1,5 @@
+//blind 75 p1
+
 #include<stdio.h>
 #include<iostream>
 #include<vector>
@@ -21,6 +23,8 @@ vector<int> twoSum(vector<int>& nums, int target)
 }
 
 int main(){
+
+    //test
     vector<int> cases = {2,5,5,11};
     vector<int> ans = twoSum(cases ,10);
 
