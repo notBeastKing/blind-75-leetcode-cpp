@@ -10,6 +10,7 @@ int missingNumber(vector<int>& nums) {
     int missing = 0;
     int maxlen = nums.size();
     int missin_sum = 0;
+
     int sum =(maxlen * (maxlen+1))/2;
 
     for(int &num: nums){
@@ -17,7 +18,6 @@ int missingNumber(vector<int>& nums) {
     }
 
     missing = sum - missin_sum;
-
     return missing;
 }
 
