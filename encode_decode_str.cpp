@@ -50,7 +50,9 @@ vector<string> decode(string s) {
 
 
 int main(){
+    //tests
     vector<vector<string>> tests = {{"we","say",":","yes","!@#$%^&*()"}, {"neet","code","love","you"}, {"we","say",":","yes"}};
+    
     for(vector<string> test: tests){
         string tryin = encode(test);
         vector<string> ans;
